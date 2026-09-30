@@ -4,111 +4,134 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Muhammad Jawad | YouTube Content Production</title>
-<meta name="description" content="Muhammad Jawad provides end-to-end YouTube content production for faceless and documentary channels.">
+<meta name="description" content="Muhammad Jawad — YouTube content production partner for faceless and documentary channels. Research, scripting, editing, thumbnails, SEO and publishing support.">
 <style>
-:root{--bg:#090909;--card:#111;--text:#f5f5f5;--muted:#a6a6a6;--accent:#f4c542;--line:#252525}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,Arial,sans-serif;line-height:1.55}
-a{color:inherit;text-decoration:none}.wrap{max-width:1160px;margin:auto;padding:0 28px}
-nav{height:78px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line)}
-.logo{font-weight:800;letter-spacing:.04em}.logo span{color:var(--accent)}
-.navlinks{display:flex;gap:26px;color:#bbb;font-size:14px}.navlinks a:hover{color:#fff}
-.hero{padding:105px 0 95px;border-bottom:1px solid var(--line)}
-.kicker{color:var(--accent);font-size:13px;font-weight:800;letter-spacing:.16em;text-transform:uppercase}
-h1{font-size:clamp(48px,7vw,88px);line-height:.98;letter-spacing:-.055em;max-width:950px;margin:18px 0}
-.hero p{font-size:20px;color:#bdbdbd;max-width:760px}
-.flow{margin:28px 0;color:#ddd;font-size:14px;word-spacing:7px}
-.btns{display:flex;gap:12px;flex-wrap:wrap;margin-top:32px}.btn{padding:14px 20px;border:1px solid #444;border-radius:4px;font-weight:800;font-size:13px}.btn.primary{background:var(--accent);color:#090909;border-color:var(--accent)}
-section{padding:82px 0;border-bottom:1px solid var(--line)}.eyebrow{font-size:12px;color:var(--accent);font-weight:800;letter-spacing:.14em;text-transform:uppercase}
-h2{font-size:clamp(34px,5vw,58px);line-height:1.02;letter-spacing:-.04em;margin:10px 0 28px}.lead{font-size:18px;color:#aaa;max-width:820px}
-.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.card{background:var(--card);border:1px solid var(--line);padding:28px;min-height:190px}.num{color:var(--accent);font-weight:900;font-size:12px}.card h3{font-size:21px;margin:14px 0 8px}.card p{color:#999;font-size:14px}
-.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border:1px solid var(--line)}.step{padding:25px;border-right:1px solid var(--line);min-height:150px}.step:last-child{border-right:0}.step b{color:var(--accent);font-size:12px}.step h3{margin:10px 0 0}
-.projects{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.project{background:#101010;border:1px solid var(--line);overflow:hidden}.thumb{height:190px;background:linear-gradient(135deg,#1b1b1b,#070707);display:flex;align-items:center;justify-content:center;color:#555;font-weight:800;letter-spacing:.08em}.projectbody{padding:22px}.project h3{margin:0 0 7px;font-size:20px}.project p{margin:0 0 18px;color:#999;font-size:14px}.watch{color:var(--accent);font-size:13px;font-weight:900}
-.models{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.model{padding:30px;border:1px solid var(--line);background:#0d0d0d}.model h3{font-size:23px}.model p{color:#999;font-size:14px}
-.cta{padding:105px 0}.cta h2{max-width:850px}.contact{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.contact a{border:1px solid #333;padding:14px 18px}
-footer{padding:30px 0;color:#777;font-size:13px;display:flex;justify-content:space-between;gap:20px}
-@media(max-width:800px){.navlinks{display:none}.grid,.projects,.models{grid-template-columns:1fr}.steps{grid-template-columns:1fr 1fr}.step{border-bottom:1px solid var(--line)}.hero{padding-top:70px}footer{display:block}footer div+div{margin-top:10px}}
+:root{--bg:#08090b;--panel:#101216;--panel2:#15171c;--text:#f5f5f2;--muted:#a4a7ad;--line:#262930;--accent:#f4c542;--max:1180px}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Inter,Arial,Helvetica,sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+a{color:inherit;text-decoration:none}
+.container{width:min(var(--max),92%);margin:auto}
+nav{position:sticky;top:0;z-index:50;background:rgba(8,9,11,.9);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.navin{height:72px;display:flex;align-items:center;justify-content:space-between}
+.logo{font-weight:800;letter-spacing:-.5px}.logo span{color:var(--accent)}
+.navlinks{display:flex;gap:28px;font-size:14px;color:#c7c9cd}
+.navlinks a:hover{color:var(--accent)}
+.navcta{border:1px solid #3a3d44;padding:10px 16px;border-radius:7px;font-size:13px;font-weight:700}
+.hero{padding:110px 0 95px;border-bottom:1px solid var(--line)}
+.eyebrow{color:var(--accent);font-size:12px;font-weight:800;letter-spacing:2px;text-transform:uppercase;margin-bottom:18px}
+h1{font-size:clamp(48px,7vw,86px);line-height:.98;letter-spacing:-4px;max-width:950px}
+h1 em{font-style:normal;color:var(--accent)}
+.hero p{max-width:700px;color:var(--muted);font-size:19px;margin:28px 0 34px}
+.buttons{display:flex;gap:12px;flex-wrap:wrap}.btn{padding:14px 21px;border-radius:7px;font-weight:800;font-size:14px}.primary{background:var(--accent);color:#111}.secondary{border:1px solid #363941;color:#eee}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);margin-top:70px;border:1px solid var(--line)}
+.stat{background:var(--bg);padding:25px}.stat strong{display:block;font-size:25px}.stat span{color:var(--muted);font-size:13px}
+section{padding:90px 0;border-bottom:1px solid var(--line)}
+.sectionhead{display:grid;grid-template-columns:.8fr 1.6fr;gap:40px;margin-bottom:45px}
+.sectionhead h2{font-size:clamp(32px,4vw,54px);line-height:1.02;letter-spacing:-2px}
+.sectionhead p{color:var(--muted);font-size:17px;max-width:680px}
+.aboutgrid{display:grid;grid-template-columns:1.3fr .7fr;gap:24px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:30px}
+.card h3{font-size:20px;margin-bottom:10px}.card p{color:var(--muted)}
+.services{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.service{padding:28px;background:var(--panel);border:1px solid var(--line);border-radius:9px;min-height:185px}
+.num{color:var(--accent);font-weight:800;font-size:12px}.service h3{margin:18px 0 8px}.service p{color:var(--muted);font-size:14px}
+.process{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.step{border-top:2px solid var(--accent);padding:20px 4px}.step b{font-size:12px;color:var(--muted)}.step h3{margin:8px 0}.step p{font-size:13px;color:var(--muted)}
+.projects{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.project{background:var(--panel);border:1px solid var(--line);border-radius:10px;overflow:hidden}
+.projecttop{height:150px;background:linear-gradient(135deg,#181a20,#0c0d10);display:flex;align-items:end;padding:20px}
+.projecttop span{font-size:11px;color:var(--accent);letter-spacing:1.5px;font-weight:800}
+.projectbody{padding:23px}.projectbody h3{font-size:20px}.projectbody p{color:var(--muted);font-size:13px;margin:9px 0 18px}
+.tags{display:flex;gap:6px;flex-wrap:wrap}.tag{font-size:10px;border:1px solid #30333a;padding:5px 7px;border-radius:4px;color:#c9cbd0}
+.project a{display:inline-block;margin-top:18px;color:var(--accent);font-weight:800;font-size:12px}
+.truth{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:35px;display:grid;grid-template-columns:1fr 1fr;gap:35px}
+.truth h3{font-size:26px}.truth p{color:var(--muted);margin-top:10px}
+.faq{max-width:850px}.faqitem{border-top:1px solid var(--line);padding:22px 0}.faqitem h3{font-size:17px}.faqitem p{color:var(--muted);margin-top:7px}
+.cta{padding:100px 0;text-align:center}.cta h2{font-size:clamp(40px,6vw,70px);letter-spacing:-3px;line-height:1}.cta p{color:var(--muted);max-width:650px;margin:20px auto 30px}
+footer{padding:35px 0;color:#7e8188;font-size:12px}.foot{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+@media(max-width:850px){.navlinks{display:none}.sectionhead,.aboutgrid,.truth{grid-template-columns:1fr}.services,.projects{grid-template-columns:1fr 1fr}.process{grid-template-columns:1fr 1fr}.stats{grid-template-columns:1fr}}
+@media(max-width:560px){.hero{padding:75px 0}.hero p{font-size:16px}h1{letter-spacing:-2px}.services,.projects,.process{grid-template-columns:1fr}.stats{margin-top:45px}.navcta{display:none}}
 </style>
 </head>
 <body>
-<div class="wrap">
-<nav><div class="logo">MJ<span>.</span></div><div class="navlinks"><a href="#work">Work</a><a href="#services">Services</a><a href="#process">Process</a><a href="#contact">Contact</a></div></nav>
+<nav><div class="container navin">
+<a class="logo" href="#">MJ<span>.</span></a>
+<div class="navlinks"><a href="#about">About</a><a href="#services">Services</a><a href="#work">Work</a><a href="#process">Process</a><a href="#faq">FAQ</a></div>
+<a class="navcta" href="mailto:muhammadjawad9000390@gmail.com">Let's Talk</a>
+</div></nav>
 
-<header class="hero">
-<div class="kicker">YouTube Content Production</div>
-<h1>From idea to<br>published video.</h1>
-<p>I help YouTube creators, channel owners, agencies and investors produce faceless and documentary content through a complete end-to-end production workflow.</p>
-<div class="flow">RESEARCH → SCRIPT → VOICEOVER → EDITING → THUMBNAIL → SEO → PUBLISHING</div>
-<div class="btns"><a class="btn primary" href="#work">VIEW MY WORK</a><a class="btn" href="#contact">WORK WITH ME</a></div>
-</header>
-
-<section>
-<div class="eyebrow">The offer</div><h2>I don't just edit videos.</h2>
-<p class="lead">I handle the content production pipeline behind YouTube channels — from finding the topic and building the story to producing, packaging and preparing the final upload.</p>
-</section>
-
-<section id="services">
-<div class="eyebrow">Capabilities</div><h2>What I can handle.</h2>
-<div class="grid">
-<div class="card"><div class="num">01</div><h3>Niche & Content Research</h3><p>Competitor research, topic research, content ideas, audience and content planning.</p></div>
-<div class="card"><div class="num">02</div><h3>Scriptwriting</h3><p>Research-driven storytelling scripts with hooks, structure, pacing and retention in mind.</p></div>
-<div class="card"><div class="num">03</div><h3>Video Production</h3><p>B-roll, editing, captions, text animation, color, transitions, sound and visual effects.</p></div>
-<div class="card"><div class="num">04</div><h3>Thumbnail Design</h3><p>Clear visual concepts and packaging designed around the video's core idea and click appeal.</p></div>
-<div class="card"><div class="num">05</div><h3>YouTube SEO</h3><p>Titles, descriptions, keywords, chapters and metadata for properly packaging each video.</p></div>
-<div class="card"><div class="num">06</div><h3>Publishing Support</h3><p>Uploads, scheduling, playlists, content calendars and basic channel-side production support.</p></div>
+<header class="hero"><div class="container">
+<div class="eyebrow">YouTube Content Production</div>
+<h1>From <em>idea</em> to published video.</h1>
+<p>I’m Muhammad Jawad — a YouTube content production partner helping faceless and documentary channels turn ideas into complete, publish-ready content.</p>
+<div class="buttons"><a class="btn primary" href="#work">View My Work</a><a class="btn secondary" href="https://wa.me/923174833265">Start a Conversation</a></div>
+<div class="stats">
+<div class="stat"><strong>3</strong><span>Client projects worked on</span></div>
+<div class="stat"><strong>End-to-End</strong><span>Production workflow</span></div>
+<div class="stat"><strong>Faceless</strong><span>Documentary-focused content</span></div>
 </div>
-</section>
+</div></header>
 
-<section id="process">
-<div class="eyebrow">Workflow</div><h2>One video. From idea to publication.</h2>
-<div class="steps">
-<div class="step"><b>01</b><h3>Research</h3></div><div class="step"><b>02</b><h3>Script</h3></div><div class="step"><b>03</b><h3>Voiceover</h3></div><div class="step"><b>04</b><h3>Edit</h3></div>
-<div class="step"><b>05</b><h3>Thumbnail</h3></div><div class="step"><b>06</b><h3>SEO</h3></div><div class="step"><b>07</b><h3>Publish</h3></div><div class="step"><b>→</b><h3>Repeat</h3></div>
+<section id="about"><div class="container">
+<div class="sectionhead"><h2>Not just an editor.</h2><p>I work across the YouTube production pipeline — from finding the topic and building the story to editing, packaging and publishing support.</p></div>
+<div class="aboutgrid">
+<div class="card"><h3>My approach</h3><p>I focus on building useful, consistent content rather than making inflated promises about views, subscribers or monetization. My portfolio shows real projects I have worked on, at their actual stage.</p></div>
+<div class="card"><h3>Who I work with</h3><p>Channel owners, creators, entrepreneurs and small teams looking for hands-on production support for faceless or documentary-style YouTube content.</p></div>
 </div>
-</section>
+</div></section>
 
-<section id="work">
-<div class="eyebrow">Selected work</div><h2>Projects.</h2>
+<section id="services"><div class="container">
+<div class="sectionhead"><h2>What I can handle.</h2><p>You can bring the channel idea. I can help turn it into a repeatable content-production workflow.</p></div>
+<div class="services">
+<div class="service"><span class="num">01</span><h3>Research & Topics</h3><p>Topic discovery, competitor research, audience angles and content ideas.</p></div>
+<div class="service"><span class="num">02</span><h3>Scriptwriting</h3><p>Research-driven scripts built around hooks, storytelling, pacing and retention.</p></div>
+<div class="service"><span class="num">03</span><h3>Video Editing</h3><p>Faceless documentary editing with B-roll, pacing, captions, transitions and sound design.</p></div>
+<div class="service"><span class="num">04</span><h3>Thumbnail Design</h3><p>Clear, attention-focused thumbnails designed around the video's core idea.</p></div>
+<div class="service"><span class="num">05</span><h3>YouTube SEO</h3><p>Titles, descriptions, keywords and packaging support for publishing.</p></div>
+<div class="service"><span class="num">06</span><h3>Publishing Support</h3><p>Upload preparation, metadata, organization and practical channel support.</p></div>
+</div>
+</div></section>
+
+<section id="process"><div class="container">
+<div class="sectionhead"><h2>One workflow. One point of contact.</h2><p>Instead of coordinating several freelancers for every stage, you can work with one production partner across the content pipeline.</p></div>
+<div class="process">
+<div class="step"><b>01 — RESEARCH</b><h3>Find the angle</h3><p>Topic, audience and competitor research.</p></div>
+<div class="step"><b>02 — SCRIPT</b><h3>Build the story</h3><p>Hook, structure, narration and retention.</p></div>
+<div class="step"><b>03 — PRODUCE</b><h3>Create the video</h3><p>Voiceover workflow, visuals, editing and thumbnail.</p></div>
+<div class="step"><b>04 — PUBLISH</b><h3>Package & upload</h3><p>SEO, metadata and publishing support.</p></div>
+</div>
+</div></section>
+
+<section id="work"><div class="container">
+<div class="sectionhead"><h2>Selected work.</h2><p>These are real projects I have worked on. The channels are at different stages, so I do not present them as monetization or growth case studies.</p></div>
 <div class="projects">
-<div class="project"><div class="thumb">PROJECT 01</div><div class="projectbody"><h3>Documentary Project</h3><p>Video production / editing portfolio sample.</p><a class="watch" target="_blank" href="https://drive.google.com/file/d/1EnyKJJZH61L2klDMNDzgBHDbc75BBfP-/view?usp=sharing">WATCH PROJECT ↗</a></div></div>
-<div class="project"><div class="thumb">ESCALATOR</div><div class="projectbody"><h3>Escalator Documentary</h3><p>Documentary-style video production sample.</p><a class="watch" target="_blank" href="https://drive.google.com/file/d/1yk4hfPo2mnuf9K-RtPgvc7McP6vhXxF6/view?usp=sharing">WATCH PROJECT ↗</a></div></div>
-<div class="project"><div class="thumb">LIFE GRAPHY</div><div class="projectbody"><h3>Life Graphy</h3><p>Faceless YouTube channel work and content direction.</p><a class="watch" target="_blank" href="https://www.youtube.com/@Life_graphy1/videos">VIEW CHANNEL ↗</a></div></div>
+<div class="project"><div class="projecttop"><span>PROJECT 01</span></div><div class="projectbody"><h3>Project No. 2</h3><p>Client production work. Available for review through the project link.</p><div class="tags"><span class="tag">YouTube</span><span class="tag">Production</span><span class="tag">Faceless</span></div><a href="https://drive.google.com/file/d/1EnyKJJZH61L2klDMNDzgBHDbc75BBfP-/view?usp=sharing" target="_blank">View Project →</a></div></div>
+<div class="project"><div class="projecttop"><span>PROJECT 02</span></div><div class="projectbody"><h3>Escalator</h3><p>Client production work presented as a portfolio sample.</p><div class="tags"><span class="tag">Editing</span><span class="tag">Documentary</span><span class="tag">Video</span></div><a href="https://drive.google.com/file/d/1yk4hfPo2mnuf9K-RtPgvc7McP6vhXxF6/view?usp=sharing" target="_blank">View Project →</a></div></div>
+<div class="project"><div class="projecttop"><span>PROJECT 03</span></div><div class="projectbody"><h3>Life Graphy</h3><p>A YouTube channel project I have worked on in the documentary space.</p><div class="tags"><span class="tag">Documentary</span><span class="tag">YouTube</span><span class="tag">Content</span></div><a href="https://www.youtube.com/@Life_graphy1/videos" target="_blank">View Channel →</a></div></div>
 </div>
-</section>
+</div></section>
 
-<section>
-<div class="eyebrow">Who I work with</div><h2>Built for people who want the content handled.</h2>
-<div class="grid">
-<div class="card"><div class="num">01</div><h3>Channel Owners</h3><p>Creators who need a reliable production partner.</p></div>
-<div class="card"><div class="num">02</div><h3>YouTube Investors</h3><p>Investors building channels who want production handled end-to-end.</p></div>
-<div class="card"><div class="num">03</div><h3>New Channels</h3><p>Faceless and documentary channels starting from the ground up.</p></div>
-</div>
-</section>
+<section><div class="container">
+<div class="truth"><div><h3>Real work. Honest positioning.</h3><p>I’m currently building my client portfolio through hands-on projects. I have worked with 3 clients so far, and I prefer to show the work as it is rather than manufacture impressive-looking numbers.</p></div>
+<div><h3>No fake promises.</h3><p>I do not claim that a project is monetized, viral or generating revenue unless there is real evidence for it. The goal is simple: produce strong content and build long-term channel systems.</p></div></div>
+</div></section>
 
-<section>
-<div class="eyebrow">Production models</div><h2>Work the way your channel needs.</h2>
-<div class="models">
-<div class="model"><div class="num">01</div><h3>Video-by-Video</h3><p>Send a topic or brief. I handle the required production and deliver the finished video.</p></div>
-<div class="model"><div class="num">02</div><h3>Monthly Production</h3><p>A recurring workflow covering research, scripts, production, thumbnails and SEO.</p></div>
-<div class="model"><div class="num">03</div><h3>End-to-End</h3><p>You focus on the channel and business. I handle the content production pipeline.</p></div>
-</div>
-</section>
+<section id="faq"><div class="container">
+<div class="sectionhead"><h2>Questions, answered.</h2><p>A few things a potential client may want to know before starting.</p></div>
+<div class="faq">
+<div class="faqitem"><h3>Do you only edit videos?</h3><p>No. I can support multiple stages of the YouTube production process, including research, scripting, editing, thumbnails, SEO and publishing support.</p></div>
+<div class="faqitem"><h3>Do you work with faceless channels?</h3><p>Yes. Faceless and documentary-style YouTube content is a primary focus of my production work.</p></div>
+<div class="faqitem"><h3>Can you guarantee monetization or views?</h3><p>No. YouTube performance depends on many factors. I focus on the parts of the production process I can actually control: research, storytelling, editing, packaging and consistency.</p></div>
+<div class="faqitem"><h3>How can we start?</h3><p>Send me your channel, niche or idea. We can discuss what needs to be produced and decide on the right workflow.</p></div>
+</div></div></section>
 
-<section>
-<div class="eyebrow">Why work with me</div><h2>One production pipeline.<br>One point of contact.</h2>
-<p class="lead">Instead of coordinating separate people for research, scripting, editing, thumbnails and SEO, you can work with one production partner who understands the full YouTube workflow.</p>
-</section>
+<section class="cta"><div class="container">
+<div class="eyebrow">Let's work together</div>
+<h2>Have a channel idea?<br>Let's build the content.</h2>
+<p>If you need someone who can work across the YouTube production pipeline, send me your project details.</p>
+<div class="buttons" style="justify-content:center"><a class="btn primary" href="mailto:muhammadjawad9000390@gmail.com">Email Me</a><a class="btn secondary" href="https://wa.me/923174833265">WhatsApp</a></div>
+</div></section>
 
-<section class="cta" id="contact">
-<div class="eyebrow">Let's build</div><h2>Ready to create your next YouTube video?</h2>
-<p class="lead">If you are building a new channel, scaling an existing one, or looking for an end-to-end production partner, let's talk.</p>
-<div class="contact">
-<a href="mailto:muhammadjawad9000390@gmail.com">EMAIL ME</a>
-<a href="https://wa.me/923174833265" target="_blank">WHATSAPP</a>
-<a href="#work">VIEW MY WORK</a>
-</div>
-</section>
-
-<footer><div><strong>Muhammad Jawad</strong> — YouTube Content Production & Channel Management</div><div>Working with clients worldwide.</div></footer>
-</div>
-</body>
-</html>
+<footer><div class="container foot"><span>© 2026 Muhammad Jawad. YouTube Content Production.</span><span>Islamabad, Pakistan · Working with clients remotely</span></div></footer>
+</body></html>

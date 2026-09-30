@@ -1,137 +1,590 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Muhammad Jawad | YouTube Content Production</title>
-<meta name="description" content="Muhammad Jawad — YouTube content production partner for faceless and documentary channels. Research, scripting, editing, thumbnails, SEO and publishing support.">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Muhammad Jawad — YouTube Content Production</title>
+<meta name="description" content="End-to-end YouTube content production for faceless, documentary, AI-film and animation channels.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#08090b;--panel:#101216;--panel2:#15171c;--text:#f5f5f2;--muted:#a4a7ad;--line:#262930;--accent:#f4c542;--max:1180px}
-*{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --bg:#07120d;--bg2:#0b1811;--card:#0e1d15;--card2:#12261b;
+  --line:rgba(133,224,171,.18);--green:#39b979;--mint:#8de1b2;
+  --text:#f3f7f4;--muted:#abbab1;--soft:#718178;--max:1180px;
+}
+*{box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{font-family:Inter,Arial,Helvetica,sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
-a{color:inherit;text-decoration:none}
+body{margin:0;background:
+radial-gradient(circle at 85% 0,rgba(57,185,121,.15),transparent 28%),
+radial-gradient(circle at 5% 25%,rgba(57,185,121,.07),transparent 23%),
+var(--bg);color:var(--text);font-family:"Manrope",Arial,sans-serif;line-height:1.6;overflow-x:hidden}
+a{text-decoration:none;color:inherit}
+button{font:inherit}
 .container{width:min(var(--max),92%);margin:auto}
-nav{position:sticky;top:0;z-index:50;background:rgba(8,9,11,.9);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
-.navin{height:72px;display:flex;align-items:center;justify-content:space-between}
-.logo{font-weight:800;letter-spacing:-.5px}.logo span{color:var(--accent)}
-.navlinks{display:flex;gap:28px;font-size:14px;color:#c7c9cd}
-.navlinks a:hover{color:var(--accent)}
-.navcta{border:1px solid #3a3d44;padding:10px 16px;border-radius:7px;font-size:13px;font-weight:700}
-.hero{padding:110px 0 95px;border-bottom:1px solid var(--line)}
-.eyebrow{color:var(--accent);font-size:12px;font-weight:800;letter-spacing:2px;text-transform:uppercase;margin-bottom:18px}
-h1{font-size:clamp(48px,7vw,86px);line-height:.98;letter-spacing:-4px;max-width:950px}
-h1 em{font-style:normal;color:var(--accent)}
-.hero p{max-width:700px;color:var(--muted);font-size:19px;margin:28px 0 34px}
-.buttons{display:flex;gap:12px;flex-wrap:wrap}.btn{padding:14px 21px;border-radius:7px;font-weight:800;font-size:14px}.primary{background:var(--accent);color:#111}.secondary{border:1px solid #363941;color:#eee}
-.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);margin-top:70px;border:1px solid var(--line)}
-.stat{background:var(--bg);padding:25px}.stat strong{display:block;font-size:25px}.stat span{color:var(--muted);font-size:13px}
-section{padding:90px 0;border-bottom:1px solid var(--line)}
-.sectionhead{display:grid;grid-template-columns:.8fr 1.6fr;gap:40px;margin-bottom:45px}
-.sectionhead h2{font-size:clamp(32px,4vw,54px);line-height:1.02;letter-spacing:-2px}
-.sectionhead p{color:var(--muted);font-size:17px;max-width:680px}
-.aboutgrid{display:grid;grid-template-columns:1.3fr .7fr;gap:24px}
-.card{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:30px}
-.card h3{font-size:20px;margin-bottom:10px}.card p{color:var(--muted)}
-.services{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
-.service{padding:28px;background:var(--panel);border:1px solid var(--line);border-radius:9px;min-height:185px}
-.num{color:var(--accent);font-weight:800;font-size:12px}.service h3{margin:18px 0 8px}.service p{color:var(--muted);font-size:14px}
-.process{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
-.step{border-top:2px solid var(--accent);padding:20px 4px}.step b{font-size:12px;color:var(--muted)}.step h3{margin:8px 0}.step p{font-size:13px;color:var(--muted)}
-.projects{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
-.project{background:var(--panel);border:1px solid var(--line);border-radius:10px;overflow:hidden}
-.projecttop{height:150px;background:linear-gradient(135deg,#181a20,#0c0d10);display:flex;align-items:end;padding:20px}
-.projecttop span{font-size:11px;color:var(--accent);letter-spacing:1.5px;font-weight:800}
-.projectbody{padding:23px}.projectbody h3{font-size:20px}.projectbody p{color:var(--muted);font-size:13px;margin:9px 0 18px}
-.tags{display:flex;gap:6px;flex-wrap:wrap}.tag{font-size:10px;border:1px solid #30333a;padding:5px 7px;border-radius:4px;color:#c9cbd0}
-.project a{display:inline-block;margin-top:18px;color:var(--accent);font-weight:800;font-size:12px}
-.truth{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:35px;display:grid;grid-template-columns:1fr 1fr;gap:35px}
-.truth h3{font-size:26px}.truth p{color:var(--muted);margin-top:10px}
-.faq{max-width:850px}.faqitem{border-top:1px solid var(--line);padding:22px 0}.faqitem h3{font-size:17px}.faqitem p{color:var(--muted);margin-top:7px}
-.cta{padding:100px 0;text-align:center}.cta h2{font-size:clamp(40px,6vw,70px);letter-spacing:-3px;line-height:1}.cta p{color:var(--muted);max-width:650px;margin:20px auto 30px}
-footer{padding:35px 0;color:#7e8188;font-size:12px}.foot{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
-@media(max-width:850px){.navlinks{display:none}.sectionhead,.aboutgrid,.truth{grid-template-columns:1fr}.services,.projects{grid-template-columns:1fr 1fr}.process{grid-template-columns:1fr 1fr}.stats{grid-template-columns:1fr}}
-@media(max-width:560px){.hero{padding:75px 0}.hero p{font-size:16px}h1{letter-spacing:-2px}.services,.projects,.process{grid-template-columns:1fr}.stats{margin-top:45px}.navcta{display:none}}
+.nav{position:fixed;top:0;left:0;right:0;z-index:50;background:rgba(7,18,13,.74);backdrop-filter:blur(18px);border-bottom:1px solid transparent;transition:.35s}
+.nav.scrolled{background:rgba(7,18,13,.94);border-color:var(--line)}
+.navin{height:74px;display:flex;align-items:center;justify-content:space-between}
+.brand{font-weight:800;font-size:22px;letter-spacing:-.06em}.brand i{font-style:normal;color:var(--mint)}
+.navlinks{display:flex;gap:26px;font-size:12px;color:#cbd5ce}
+.navlinks a{transition:.2s}.navlinks a:hover{color:var(--mint)}
+.navcta{padding:10px 15px;border:1px solid rgba(141,225,178,.34);border-radius:999px;color:var(--mint);font-size:11px;font-weight:800}
+.mobile{display:none;border:0;background:transparent;color:#fff;font-size:22px}
+main{padding-top:74px}
+section{padding:92px 0;border-top:1px solid var(--line)}
+/* FIRST-THING CLIENT SEES */
+.work-hero{padding:54px 0 76px}
+.eyebrow{font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--mint);font-weight:800}
+.hero-title{font-size:clamp(40px,5.4vw,72px);line-height:1.02;letter-spacing:-.06em;margin:12px 0 12px}
+.hero-sub{color:var(--muted);font-size:14px;max-width:760px;margin:0}
+.samples{display:grid;grid-template-columns:repeat(3,1fr);gap:15px;margin-top:34px}
+.sample-card{background:linear-gradient(180deg,rgba(255,255,255,.03),rgba(255,255,255,.015));border:1px solid var(--line);border-radius:20px;overflow:hidden;transition:.4s cubic-bezier(.2,.8,.2,1);box-shadow:0 20px 60px rgba(0,0,0,.18)}
+.sample-card:hover{transform:translateY(-8px);border-color:rgba(141,225,178,.40);box-shadow:0 30px 80px rgba(0,0,0,.28)}
+.frame{height:220px;background:#09130e;position:relative}
+.frame iframe{width:100%;height:100%;border:0}
+.frame-fallback{position:absolute;inset:0;display:grid;place-items:center;background:linear-gradient(140deg,#12271b,#08110c);text-align:center;padding:25px}
+.frame-fallback b{font-size:13px}.frame-fallback span{display:block;color:var(--muted);font-size:9px;margin-top:5px}
+.sample-body{padding:20px 21px 22px}.sample-label{font-size:9px;letter-spacing:.12em;color:var(--mint);font-weight:800;text-transform:uppercase}
+.sample-body h3{font-size:19px;margin:10px 0 7px;line-height:1.2}.sample-body p{font-size:11px;color:var(--muted);margin:0;min-height:51px}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin:13px 0 16px}.tag{border:1px solid var(--line);border-radius:999px;padding:4px 7px;font-size:8px;color:#ced8d2}
+.link{color:var(--mint);font-size:10px;font-weight:800}
+section.about{padding-top:100px}
+.split{display:grid;grid-template-columns:.78fr 1.22fr;gap:48px;align-items:start}
+h2{font-size:clamp(34px,4.5vw,56px);line-height:1;letter-spacing:-.055em;margin:0}
+.lead{font-size:18px;color:#d7ded9;margin:0 0 18px;max-width:680px}
+.copy{font-size:13px;color:var(--muted);margin:0;max-width:700px}
+.checks{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin-top:24px}.check{padding:12px;border:1px solid var(--line);border-radius:12px;color:#d2dbd5;font-size:10px;background:rgba(255,255,255,.02)}.check:before{content:"✓";color:var(--mint);margin-right:7px}
+.pipeline{margin-top:30px;display:flex;flex-wrap:wrap;gap:7px}.pipeline span{border:1px solid var(--line);border-radius:999px;padding:8px 11px;font-size:9px;color:#cbd5cf}.pipeline i{font-style:normal;color:var(--mint)}
+.section-head{display:grid;grid-template-columns:.8fr 1.2fr;gap:38px;align-items:end;margin-bottom:42px}.section-head p{margin:0;color:var(--muted);font-size:13px}
+.services{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.service{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:25px;min-height:230px;transition:.35s}.service:hover{transform:translateY(-7px);border-color:rgba(141,225,178,.36)}
+.service .no{font-size:9px;letter-spacing:.12em;color:var(--mint);font-weight:800}.service h3{font-size:18px;margin:16px 0 8px}.service p{font-size:11px;color:var(--muted);margin:0 0 13px}.service ul{list-style:none;padding:0;margin:0;display:grid;gap:6px}.service li{font-size:10px;color:#d0d8d3}.service li:before{content:"•";color:var(--mint);margin-right:7px}
+.custom{margin-top:16px;padding:27px;border:1px solid var(--line);background:linear-gradient(120deg,rgba(57,185,121,.08),rgba(255,255,255,.02));border-radius:18px;display:flex;align-items:center;justify-content:space-between;gap:25px}.custom h3{font-size:20px;margin:0 0 6px}.custom p{margin:0;color:var(--muted);font-size:11px}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:12px 17px;border-radius:10px;font-size:10px;font-weight:800;transition:.25s;white-space:nowrap}.primary{background:var(--green);color:#031008}.primary:hover{transform:translateY(-3px);background:#59cb8d}.outline{border:1px solid var(--line);background:rgba(255,255,255,.02)}.outline:hover{transform:translateY(-3px);border-color:rgba(141,225,178,.38)}
+.experience{display:grid;grid-template-columns:1fr 1fr;gap:15px}.experience-card{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:30px}.metric{font-size:54px;line-height:1;font-weight:800;letter-spacing:-.06em;color:var(--mint)}.experience-card h3{font-size:20px;margin:15px 0 7px}.experience-card p{font-size:11px;color:var(--muted);margin:0}
+.proof{display:grid;grid-template-columns:.72fr 1.28fr;gap:24px;align-items:center;background:var(--card);border:1px solid var(--line);border-radius:22px;padding:24px}
+.proof-img{border-radius:14px;overflow:hidden;border:1px solid var(--line);background:#fff}.proof-img img{width:100%;height:auto;display:block}.proof-copy h3{font-size:25px;line-height:1.1;margin:10px 0}.proof-copy p{font-size:12px;color:var(--muted);margin:0}.proof-note{font-size:9px!important;color:var(--soft)!important;margin-top:12px!important}
+.steps{display:grid;grid-template-columns:repeat(7,1fr)}.step{padding:18px 10px;border-top:2px solid rgba(141,225,178,.33);position:relative}.step:after{content:"→";position:absolute;right:-7px;top:7px;color:var(--mint)}.step:last-child:after{display:none}.step b{color:var(--mint);font-size:8px}.step h3{font-size:13px;margin:9px 0 4px}.step p{color:var(--muted);font-size:9px;line-height:1.45;margin:0}
+.pricing{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.price{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:26px;display:flex;flex-direction:column;transition:.35s}.price:hover{transform:translateY(-7px)}.price.featured{border-color:rgba(141,225,178,.48);background:linear-gradient(180deg,rgba(57,185,121,.09),rgba(255,255,255,.015))}
+.plan{font-size:9px;letter-spacing:.15em;color:var(--mint);font-weight:800}.amount{font-size:49px;line-height:1;font-weight:800;letter-spacing:-.06em;margin-top:14px}.per{font-size:9px;color:var(--muted)}.videos{font-size:12px;font-weight:800;margin:15px 0}.price>p{color:var(--muted);font-size:10px;min-height:50px;margin:0 0 14px}.price ul{list-style:none;padding:0;margin:0;display:grid;gap:7px}.price li{font-size:9.5px;color:#d2dad5}.price li:before{content:"✓";color:var(--mint);margin-right:6px}.price .btn{margin-top:18px}.price small{font-size:8px;color:var(--soft);line-height:1.5;margin-top:10px}
+.price-sample{min-height:105px;margin-top:17px;border:1px dashed rgba(141,225,178,.28);border-radius:12px;display:grid;place-items:center;text-align:center;color:var(--muted);font-size:9px;padding:12px}.price-sample b{display:block;color:#d9e1dc;margin-bottom:4px}
+.price-note{text-align:center;color:var(--muted);font-size:9px;margin-top:16px}
+.faq{max-width:900px}.faqitem{border-top:1px solid var(--line);padding:17px 0;cursor:pointer}.q{display:flex;justify-content:space-between;gap:16px;font-size:11px;font-weight:800}.q span{color:var(--mint);transition:.2s}.a{max-height:0;overflow:hidden;color:var(--muted);font-size:10px;transition:.3s}.faqitem.open .a{max-height:120px;padding-top:8px}.faqitem.open .q span{transform:rotate(45deg)}
+.contact{padding:104px 0 100px;text-align:center;background:radial-gradient(circle at 50% 35%,rgba(57,185,121,.11),transparent 39%)}.contact h2{font-size:clamp(40px,6vw,70px);max-width:860px;margin:12px auto 16px}.contact p{max-width:600px;margin:auto;color:var(--muted);font-size:13px}.actions{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin-top:25px}
+footer{border-top:1px solid var(--line);padding:26px 0;color:var(--soft);font-size:9px}.foot{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap}
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .75s cubic-bezier(.2,.7,.2,1),transform .75s cubic-bezier(.2,.7,.2,1)}.reveal.show{opacity:1;transform:none}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}.play{animation:float 3.2s ease-in-out infinite}
+@media(max-width:980px){.samples,.services,.pricing{grid-template-columns:1fr 1fr}.section-head,.split,.proof{grid-template-columns:1fr}.steps{grid-template-columns:repeat(4,1fr)}.step:after{display:none}}
+@media(max-width:700px){.navlinks,.navcta{display:none}.mobile{display:block}.hero-title{font-size:clamp(40px,12vw,62px)}.samples,.services,.pricing,.experience,.steps{grid-template-columns:1fr}.frame{height:210px}.custom{flex-direction:column;align-items:flex-start}.checks{grid-template-columns:1fr}.section{padding:78px 0}}
+
+/* V3 visual refinement: larger type, sharper contrast, consistent spacing and premium interaction */
+body{
+  font-size:15px;
+  color:#f6faf7;
+}
+.container{width:min(1200px,90vw)}
+.navin{height:78px}
+.brand{font-size:25px;letter-spacing:-.045em}
+.navlinks{font-size:13px;gap:30px}
+.navcta{font-size:12px;padding:11px 17px}
+.hero-title{font-size:clamp(48px,6.1vw,82px)}
+.hero-sub{font-size:15.5px;line-height:1.72}
+.eyebrow{font-size:11px}
+.sample-body{padding:22px 22px 24px}
+.sample-body h3{font-size:21px}
+.sample-body p{font-size:12.2px;line-height:1.7}
+.sample-label{font-size:10px}
+.tag{font-size:9px;padding:5px 8px}
+.link{font-size:11px}
+section{padding:104px 0}
+.head h2,.section-head h2{font-size:clamp(38px,4.7vw,62px)}
+.section-head p,.copy{font-size:14px;line-height:1.8}
+.lead{font-size:19px;line-height:1.6}
+.check{font-size:11px;padding:13px 14px}
+.pipeline span{font-size:10px}
+.service{padding:28px;min-height:245px}
+.service h3{font-size:20px}
+.service p{font-size:12px;line-height:1.7}
+.service li{font-size:11px}
+.custom h3{font-size:22px}
+.custom p{font-size:12px;line-height:1.65}
+.experience-card{padding:32px}
+.metric{font-size:60px}
+.experience-card h3{font-size:21px}
+.experience-card p{font-size:12px;line-height:1.7}
+.proof-copy h3{font-size:29px}
+.proof-copy p{font-size:13px;line-height:1.7}
+.proof-note{font-size:10px!important}
+.step h3{font-size:14px}
+.step p{font-size:10px}
+.price{padding:30px}
+.plan{font-size:10px}
+.amount{font-size:54px}
+.per{font-size:10px}
+.videos{font-size:13px}
+.price>p{font-size:11px;line-height:1.65}
+.price li{font-size:10.5px}
+.price-sample{font-size:10px}
+.price-note{font-size:10.5px}
+.q{font-size:12px}
+.a{font-size:11px;line-height:1.7}
+.contact h2{font-size:clamp(42px,6.2vw,76px)}
+.contact p{font-size:14px;line-height:1.75}
+
+/* More visible, clean green accents instead of a hazy look */
+.reel,.sample-card,.card,.service,.bigcard,.experience-card,.proof,.price,.custom,.project,.faqitem{
+  border-color:rgba(141,225,178,.24);
+}
+.sample-card:hover,.service:hover,.card:hover,.price:hover,.project:hover,.bigcard:hover{
+  border-color:rgba(141,225,178,.55);
+  box-shadow:
+    0 18px 55px rgba(0,0,0,.34),
+    0 0 0 1px rgba(141,225,178,.10),
+    0 0 42px rgba(57,185,121,.13);
+}
+.btn{transition:transform .28s cubic-bezier(.2,.8,.2,1),box-shadow .28s ease,background .28s ease,border-color .28s ease}
+.btn:hover{transform:translateY(-4px) scale(1.015)}
+.primary:hover{box-shadow:0 14px 34px rgba(57,185,121,.28),0 0 22px rgba(57,185,121,.16)}
+.navcta:hover{box-shadow:0 0 24px rgba(141,225,178,.12)}
+.price.featured{
+  box-shadow:0 0 0 1px rgba(141,225,178,.05),0 24px 70px rgba(0,0,0,.22);
+}
+.price.featured:hover{box-shadow:0 20px 65px rgba(0,0,0,.35),0 0 46px rgba(57,185,121,.18)}
+@keyframes softBounce{
+  0%{transform:translateY(0)}
+  45%{transform:translateY(-9px)}
+  70%{transform:translateY(-3px)}
+  100%{transform:translateY(-5px)}
+}
+.sample-card:hover,.service:hover,.price:hover,.project:hover{animation:softBounce .48s ease-out both}
+@keyframes glowPulse{
+  0%,100%{box-shadow:0 0 0 rgba(57,185,121,0)}
+  50%{box-shadow:0 0 22px rgba(57,185,121,.14)}
+}
+.sample-card,.service,.price,.project{animation-duration:3.5s}
+.video{box-shadow:inset 0 0 70px rgba(57,185,121,.04)}
+.play{filter:drop-shadow(0 0 14px rgba(141,225,178,.20))}
+@media(max-width:980px){
+  .container{width:min(940px,92vw)}
+  .head h2,.section-head h2{font-size:44px}
+  .hero-title{font-size:clamp(46px,8vw,72px)}
+}
+@media(max-width:700px){
+  .navin{height:72px}
+  .container{width:92vw}
+  .hero-title{font-size:clamp(44px,12.5vw,64px)}
+  .hero-sub{font-size:14px}
+  section{padding:82px 0}
+  .head h2,.section-head h2{font-size:40px}
+  .sample-body h3{font-size:19px}
+  .service h3{font-size:19px}
+  .experience-card{padding:26px}
+  .price{padding:25px}
+}
+
+
+/* V4 — Apple-inspired motion: smooth, thin, springy, restrained */
+:root{
+  --ease-apple:cubic-bezier(.22,1,.36,1);
+  --ease-spring:cubic-bezier(.18,.89,.32,1.28);
+}
+body{font-size:16px}
+.container{width:min(1220px,91vw)}
+.navin{height:78px}
+.brand{font-size:26px;letter-spacing:-.055em}
+.navlinks{font-size:13.5px;gap:31px}
+.navcta{font-size:12px;padding:11px 18px}
+.hero-title{font-size:clamp(52px,6.35vw,86px)}
+.hero-sub{font-size:17px;line-height:1.78;max-width:800px}
+.hero-note{font-size:12px}
+.eyebrow{font-size:11px}
+.sample-body h3{font-size:21px}
+.sample-body p{font-size:13px;line-height:1.7}
+.section-head{gap:48px}
+.section-head h2,.head h2{font-size:clamp(41px,5vw,65px)}
+.section-head p,.copy{font-size:15px;line-height:1.8}
+.lead{font-size:21px;line-height:1.58}
+.check{font-size:12px;padding:14px 15px}
+.pipeline span{font-size:10.5px}
+.service{padding:29px;min-height:250px}
+.service h3{font-size:21px}
+.service p{font-size:12.5px;line-height:1.7}
+.service li{font-size:11px}
+.metric{font-size:64px}
+.experience-card h3{font-size:22px}.experience-card p{font-size:12.5px;line-height:1.7}
+.proof-copy h3{font-size:31px}.proof-copy p{font-size:13px;line-height:1.75}
+.step h3{font-size:15px}.step p{font-size:10.5px}
+.price{padding:31px}.plan{font-size:10px}.amount{font-size:56px}.per{font-size:10px}.videos{font-size:13px}.price>p{font-size:11px;line-height:1.7}.price li{font-size:10.5px}
+.q{font-size:13px}.a{font-size:11.5px;line-height:1.7}
+.contact h2{font-size:clamp(44px,6.5vw,78px)}
+.contact p{font-size:14px;line-height:1.75}
+.availability{margin:13px auto 0;color:var(--soft);font-size:11px;letter-spacing:.01em}
+.availability b{color:#dce7e1}
+
+/* Fine glow follows the pointer over interactive surfaces. */
+.sample-card,.service,.price,.project,.bigcard,.custom,.experience-card,.proof{
+  --mx:50%;--my:50%;
+  position:relative;
+}
+.sample-card::after,.service::after,.price::after,.project::after,.bigcard::after,.custom::after,.experience-card::after,.proof::after{
+  content:"";position:absolute;inset:0;border-radius:inherit;pointer-events:none;opacity:0;
+  background:radial-gradient(260px circle at var(--mx) var(--my),rgba(141,225,178,.12),transparent 68%);
+  transition:opacity .45s var(--ease-apple);
+}
+.sample-card:hover::after,.service:hover::after,.price:hover::after,.project:hover::after,.bigcard:hover::after,.custom:hover::after,.experience-card:hover::after,.proof:hover::after{opacity:1}
+
+/* Very slim spring motion, not a harsh "jump". */
+.sample-card,.service,.price,.project,.bigcard,.custom,.experience-card{
+  transition:
+    transform .48s var(--ease-spring),
+    border-color .35s var(--ease-apple),
+    box-shadow .48s var(--ease-apple),
+    background .35s var(--ease-apple);
+}
+.sample-card:hover,.service:hover,.price:hover,.project:hover,.bigcard:hover,.experience-card:hover{
+  transform:translateY(-6px);
+}
+.sample-card:hover{transform:translateY(-8px)}
+.custom:hover{transform:translateY(-3px)}
+.btn{
+  transition:transform .48s var(--ease-spring),box-shadow .42s var(--ease-apple),background .3s var(--ease-apple),border-color .3s var(--ease-apple);
+}
+.btn:hover{transform:translateY(-3px) scale(1.012)}
+.btn:active{transform:translateY(0) scale(.985);transition-duration:.14s}
+
+/* Premium nav interaction */
+.navlinks a{position:relative;transition:color .28s var(--ease-apple)}
+.navlinks a::after{
+  content:"";position:absolute;left:0;right:100%;bottom:-7px;height:1px;
+  background:var(--mint);transition:right .38s var(--ease-apple);opacity:.8;
+}
+.navlinks a:hover::after{right:0}
+
+/* Softer reveal, closer to Apple's UI motion language */
+.reveal{opacity:0;transform:translateY(18px) scale(.992);filter:blur(1px);
+transition:opacity .75s var(--ease-apple),transform .85s var(--ease-apple),filter .65s var(--ease-apple)}
+.reveal.show{opacity:1;transform:none;filter:none}
+
+/* Hover sheen / play affordance */
+.reel{transition:transform .65s var(--ease-apple),box-shadow .65s var(--ease-apple),border-color .4s var(--ease-apple)}
+.reel:hover{transform:translateY(-5px) scale(1.006);border-color:rgba(141,225,178,.42);box-shadow:0 28px 90px rgba(0,0,0,.32),0 0 42px rgba(57,185,121,.08)}
+.play{transition:transform .55s var(--ease-spring),box-shadow .4s var(--ease-apple)}
+.video:hover .play{transform:scale(1.055);box-shadow:0 0 28px rgba(141,225,178,.18)}
+@keyframes gentleFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-4px)}}
+.play{animation:gentleFloat 3.8s ease-in-out infinite}
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{scroll-behavior:auto!important;animation:none!important;transition:none!important}
+}
+@media(max-width:980px){
+  .container{width:min(940px,92vw)}
+  .section-head h2,.head h2{font-size:46px}
+  .hero-title{font-size:clamp(48px,8vw,76px)}
+}
+@media(max-width:700px){
+  .container{width:92vw}
+  .brand{font-size:24px}
+  .hero-title{font-size:clamp(46px,12.5vw,68px)}
+  .hero-sub{font-size:15px}
+  .section-head h2,.head h2{font-size:42px}
+  .sample-body h3{font-size:20px}
+  .service h3{font-size:20px}
+  .availability{font-size:10.5px}
+}
+
+
+/* V5 — larger typography + silky interaction system */
+body{font-size:15px;color:#f6faf7}
+.container{width:min(1200px,90vw)}
+.navin{height:78px}.brand{font-size:25px}.navlinks{font-size:13px;gap:30px}.navcta{font-size:12px;padding:11px 17px}
+.hero-title{font-size:clamp(48px,6.1vw,82px)}.hero-sub{font-size:15.5px;line-height:1.72}.eyebrow{font-size:11px}
+.sample-body{padding:22px 22px 24px}.sample-body h3{font-size:21px}.sample-body p{font-size:12.2px;line-height:1.7}.sample-label{font-size:10px}.tag{font-size:9px;padding:5px 8px}.link{font-size:11px}
+section{padding:104px 0}.head h2,.section-head h2{font-size:clamp(38px,4.7vw,62px)}.section-head p,.copy{font-size:14px;line-height:1.8}.lead{font-size:19px;line-height:1.6}
+.punch{font-size:22px!important;line-height:1.42!important;letter-spacing:-.025em}
+.mini-role{display:inline-flex;margin-top:16px;padding:8px 11px;border:1px solid rgba(141,225,178,.25);border-radius:999px;color:var(--mint);font-size:10px;font-weight:800;background:rgba(57,185,121,.035)}
+.longform-note{margin-top:14px!important;padding:14px 15px;border-left:2px solid var(--green);background:rgba(57,185,121,.055);border-radius:0 12px 12px 0}
+.longform-note strong{color:#e2ebe6}
+.check{font-size:11px;padding:13px 14px}.pipeline span{font-size:10px}.service{padding:28px;min-height:245px}.service h3{font-size:20px}.service p{font-size:12px;line-height:1.7}.service li{font-size:11px}
+.custom h3{font-size:22px}.custom p{font-size:12px;line-height:1.65}.experience-card{padding:32px}.metric{font-size:60px}.experience-card h3{font-size:21px}.experience-card p{font-size:12px;line-height:1.7}
+.proof-copy h3{font-size:29px}.proof-copy p{font-size:13px;line-height:1.7}.proof-note{font-size:10px!important}.step h3{font-size:14px}.step p{font-size:10px}.price{padding:30px}.plan{font-size:10px}.amount{font-size:54px}.per{font-size:10px}.videos{font-size:13px}.price>p{font-size:11px;line-height:1.65}.price li{font-size:10.5px}.price-sample{font-size:10px}.price-note{font-size:10.5px}.q{font-size:12px}.a{font-size:11px;line-height:1.7}.contact h2{font-size:clamp(42px,6.2vw,76px)}.contact p{font-size:14px;line-height:1.75}
+
+/* Sharper green, not hazy */
+.sample-card,.service,.price,.project,.experience-card,.custom,.proof{border-color:rgba(141,225,178,.25)}
+.sample-card:hover,.service:hover,.price:hover,.project:hover,.experience-card:hover,.custom:hover,.proof:hover{
+  border-color:rgba(141,225,178,.62);
+  box-shadow:0 20px 68px rgba(0,0,0,.36),0 0 38px rgba(57,185,121,.14),inset 0 0 0 1px rgba(141,225,178,.08);
+}
+.btn{transition:transform .32s cubic-bezier(.16,.9,.2,1),box-shadow .32s ease,background .32s ease,border-color .32s ease}
+.btn:hover{transform:translateY(-4px) scale(1.015)}
+.primary:hover{box-shadow:0 15px 40px rgba(57,185,121,.28),0 0 24px rgba(57,185,121,.15)}
+.navcta:hover{box-shadow:0 0 22px rgba(141,225,178,.14)}
+.floating-contact{
+ position:fixed;right:22px;bottom:22px;z-index:60;padding:12px 16px;border-radius:999px;
+ background:var(--green);color:#041109;font-size:10px;font-weight:900;
+ box-shadow:0 12px 35px rgba(57,185,121,.22);
+ transition:transform .36s cubic-bezier(.16,.9,.2,1),box-shadow .3s ease
+}
+.floating-contact:hover{transform:translateY(-6px) scale(1.03);box-shadow:0 18px 45px rgba(57,185,121,.36),0 0 28px rgba(57,185,121,.18)}
+
+@keyframes springReveal{
+ 0%{opacity:0;transform:translateY(42px) scale(.985)}
+ 55%{opacity:1;transform:translateY(-7px) scale(1.006)}
+ 76%{transform:translateY(2px) scale(1)}
+ 100%{opacity:1;transform:translateY(0) scale(1)}
+}
+.reveal.show{animation:springReveal .88s cubic-bezier(.2,1.18,.24,1) both}
+@keyframes microSettle{0%{opacity:.7;transform:translateY(4px)}100%{opacity:1;transform:none}}
+.reveal.show h2,.reveal.show h3,.reveal.show p,.reveal.show .check,.reveal.show .pipeline span,.reveal.show .mini-role{
+ animation:microSettle .58s ease-out both
+}
+.reveal.show .check:nth-child(2){animation-delay:.04s}.reveal.show .check:nth-child(3){animation-delay:.07s}
+.reveal.show .check:nth-child(4){animation-delay:.10s}.reveal.show .check:nth-child(5){animation-delay:.13s}
+.reveal.show .check:nth-child(6){animation-delay:.16s}.reveal.show .check:nth-child(7){animation-delay:.19s}.reveal.show .check:nth-child(8){animation-delay:.22s}
+
+/* Butter-smooth hover highlight using a soft local radial field */
+.sample-card,.service,.price,.project,.experience-card,.custom,.proof{position:relative;overflow:hidden}
+.sample-card::after,.service::after,.price::after,.project::after,.experience-card::after,.custom::after,.proof::after{
+ content:"";position:absolute;width:220px;height:220px;border-radius:50%;left:var(--mx,50%);top:var(--my,50%);
+ transform:translate(-50%,-50%);pointer-events:none;opacity:0;
+ background:radial-gradient(circle,rgba(141,225,178,.12),transparent 68%);
+ transition:opacity .25s ease
+}
+.sample-card:hover::after,.service:hover::after,.price:hover::after,.project:hover::after,.experience-card:hover::after,.custom:hover::after,.proof:hover::after{opacity:1}
+
+/* Focus/selected state after a click: darker edge while keeping a soft green aura */
+.selected{
+ border-color:rgba(2,13,8,.92)!important;
+ box-shadow:0 20px 70px rgba(0,0,0,.45),0 0 0 1px rgba(57,185,121,.30),0 0 35px rgba(57,185,121,.12)!important
+}
+@media(max-width:700px){
+ .floating-contact{right:14px;bottom:14px;padding:11px 14px}.punch{font-size:19px!important}
+ .hero-title{font-size:clamp(44px,12.5vw,64px)}.hero-sub{font-size:14px}.section{padding:82px 0}
+}
+
+
+/* V7 — studio-style opening, inspired by premium production sites without copying their branding */
+.work-hero{position:relative;min-height:auto;padding:78px 0 64px;overflow:hidden}
+.work-hero:before{
+ content:"";position:absolute;inset:0;pointer-events:none;opacity:.45;
+ background-image:linear-gradient(rgba(141,225,178,.045) 1px,transparent 1px),linear-gradient(90deg,rgba(141,225,178,.045) 1px,transparent 1px);
+ background-size:46px 46px;
+ mask-image:linear-gradient(to bottom,black 0%,rgba(0,0,0,.9) 65%,transparent 100%);
+}
+.grid-glow{position:absolute;border-radius:50%;filter:blur(60px);pointer-events:none}
+.grid-glow.g1{width:340px;height:340px;right:-80px;top:-80px;background:rgba(57,185,121,.12)}
+.grid-glow.g2{width:290px;height:290px;left:-90px;bottom:20px;background:rgba(57,185,121,.06)}
+.work-top{position:relative;display:grid;grid-template-columns:1.3fr .7fr;gap:35px;align-items:end;margin-bottom:35px}
+.hero-badge{display:inline-flex;align-items:center;gap:8px;border:1px solid rgba(141,225,178,.25);background:rgba(141,225,178,.045);padding:9px 12px;border-radius:999px;color:var(--mint);font-size:10px;font-weight:800;letter-spacing:.04em}
+.hero-badge span{width:7px;height:7px;border-radius:50%;background:var(--green);box-shadow:0 0 11px rgba(57,185,121,.55)}
+.hero-title{font-size:clamp(47px,5.9vw,82px)!important;margin:16px 0 18px!important}
+.hero-title span{color:var(--mint)}
+.hero-sub{max-width:800px;font-size:15px!important;line-height:1.75!important}
+.work-cta{display:flex;flex-direction:column;align-items:flex-end;gap:10px}.mini-contact{color:var(--muted);font-size:10px;transition:.25s}.mini-contact:hover{color:var(--mint)}
+.samples{position:relative;grid-template-columns:repeat(3,1fr)!important}
+.sample-card:nth-child(4),.sample-card:nth-child(5){margin-top:2px}
+.youtube-frame{background:#050806}
+.proof-strip{position:relative;margin-top:18px;display:grid;grid-template-columns:repeat(4,1fr);border:1px solid var(--line);border-radius:17px;background:rgba(255,255,255,.018);overflow:hidden}
+.proof-strip>div{padding:20px 18px;border-right:1px solid var(--line)}.proof-strip>div:last-child{border-right:0}
+.proof-strip strong{display:block;color:var(--mint);font-size:22px;line-height:1.1}.proof-strip span{display:block;color:var(--muted);font-size:10px;margin-top:5px}
+@media(max-width:980px){
+ .work-top{grid-template-columns:1fr}.work-cta{align-items:flex-start}.samples{grid-template-columns:1fr 1fr!important}.proof-strip{grid-template-columns:1fr 1fr}
+}
+@media(max-width:700px){
+ .work-hero{padding-top:52px}.hero-title{font-size:clamp(43px,12vw,66px)!important}
+ .samples{grid-template-columns:1fr!important}.proof-strip{grid-template-columns:1fr 1fr}
+ .proof-strip>div:nth-child(2){border-right:0}.proof-strip>div:nth-child(3),.proof-strip>div:nth-child(4){border-top:1px solid var(--line)}
+}
+
 </style>
 </head>
 <body>
-<nav><div class="container navin">
-<a class="logo" href="#">MJ<span>.</span></a>
-<div class="navlinks"><a href="#about">About</a><a href="#services">Services</a><a href="#work">Work</a><a href="#process">Process</a><a href="#faq">FAQ</a></div>
-<a class="navcta" href="mailto:muhammadjawad9000390@gmail.com">Let's Talk</a>
-</div></nav>
-
-<header class="hero"><div class="container">
-<div class="eyebrow">YouTube Content Production</div>
-<h1>From <em>idea</em> to published video.</h1>
-<p>I’m Muhammad Jawad — a YouTube content production partner helping faceless and documentary channels turn ideas into complete, publish-ready content.</p>
-<div class="buttons"><a class="btn primary" href="#work">View My Work</a><a class="btn secondary" href="https://wa.me/923174833265">Start a Conversation</a></div>
-<div class="stats">
-<div class="stat"><strong>3</strong><span>Client projects worked on</span></div>
-<div class="stat"><strong>End-to-End</strong><span>Production workflow</span></div>
-<div class="stat"><strong>Faceless</strong><span>Documentary-focused content</span></div>
-</div>
+<header class="nav" id="nav"><div class="container navin">
+<a class="brand" href="#top">JD<i>.</i></a>
+<nav class="navlinks" id="links"><a href="#about">About</a><a href="#services">Services</a><a href="#process">Process</a><a href="#pricing">Pricing</a><a href="#faq">FAQ</a></nav>
+<a class="navcta" href="https://wa.me/923174833265" target="_blank">Contact Me ↗</a>
+<button class="mobile" id="mobile">☰</button>
 </div></header>
 
-<section id="about"><div class="container">
-<div class="sectionhead"><h2>Not just an editor.</h2><p>I work across the YouTube production pipeline — from finding the topic and building the story to editing, packaging and publishing support.</p></div>
-<div class="aboutgrid">
-<div class="card"><h3>My approach</h3><p>I focus on building useful, consistent content rather than making inflated promises about views, subscribers or monetization. My portfolio shows real projects I have worked on, at their actual stage.</p></div>
-<div class="card"><h3>Who I work with</h3><p>Channel owners, creators, entrepreneurs and small teams looking for hands-on production support for faceless or documentary-style YouTube content.</p></div>
+<!-- EASY-EDIT: the three sample Drive embeds and all WhatsApp/email links are plain HTML URLs.
+     Future text/links can be changed in this one file without rebuilding the whole site. -->
+<main id="top"><a class="floating-contact" href="https://wa.me/923174833265?text=Hi%20Jawad%2C%20I%27d%20like%20to%20discuss%20a%20YouTube%20project." target="_blank" aria-label="Contact Jawad on WhatsApp">WhatsApp ↗</a>
+
+<section class="work-hero">
+<div class="grid-glow g1"></div><div class="grid-glow g2"></div>
+<div class="container">
+  <div class="work-top reveal">
+    <div>
+      <div class="hero-badge"><span></span> YouTube Content Production Studio</div>
+      <h1 class="hero-title">See the work.<br><span>Then meet the producer.</span></h1>
+      <p class="hero-sub">Real production samples across AI filmmaking, AI documentary content, animation and YouTube video production — shown up front so you can judge the work before reading anything else.</p>
+    </div>
+    <div class="work-cta">
+      <a class="btn primary" href="https://wa.me/923174833265?text=Hi%20Jawad%2C%20I%27d%20like%20to%20discuss%20a%20YouTube%20project." target="_blank">Contact Me ↗</a>
+      <a class="mini-contact" href="mailto:muhammadjawad9000390@gmail.com">muhammadjawad9000390@gmail.com</a>
+    </div>
+  </div>
+
+  <div class="samples">
+    <article class="sample-card reveal">
+      <div class="frame"><iframe src="https://drive.google.com/file/d/1EnyKJJZH61L2klDMNDzgBHDbc75BBfP-/preview" allow="autoplay"></iframe></div>
+      <div class="sample-body"><div class="sample-label">01 · Premium-style AI Film</div><h3>AI Fictional Movie</h3><p>High-effort fictional movie created with VEO 3 — cinematic AI visuals, characters, environments and long-form production.</p><div class="tags"><span class="tag">VEO 3</span><span class="tag">AI Film</span><span class="tag">Cinematic</span></div><a class="link" href="https://drive.google.com/file/d/1EnyKJJZH61L2klDMNDzgBHDbc75BBfP-/view?usp=sharing" target="_blank">Open Full Project ↗</a></div>
+    </article>
+    <article class="sample-card reveal delay1">
+      <div class="frame"><iframe src="https://drive.google.com/file/d/1yk4hfPo2mnuf9K-RtPgvc7McP6vhXxF6/preview" allow="autoplay"></iframe></div>
+      <div class="sample-body"><div class="sample-label">02 · Documentary Production</div><h3>AI Documentary-Style Video</h3><p>Value-driven documentary production with AI visuals and storytelling. The format can be adapted for additional language markets.</p><div class="tags"><span class="tag">Documentary</span><span class="tag">AI Visuals</span><span class="tag">Storytelling</span></div><a class="link" href="https://drive.google.com/file/d/1yk4hfPo2mnuf9K-RtPgvc7McP6vhXxF6/view?usp=sharing" target="_blank">Open Full Project ↗</a></div>
+    </article>
+    <article class="sample-card reveal delay2">
+      <div class="frame"><iframe src="https://drive.google.com/file/d/1E7B75ojFlZf3vnUvWlTfSR3PK9f4bVvf/preview" allow="autoplay"></iframe></div>
+      <div class="sample-body"><div class="sample-label">03 · Animation / Explainer</div><h3>Whiteboard Animation</h3><p>Sticky-man / whiteboard animation work demonstrating a different explainer and educational production style.</p><div class="tags"><span class="tag">Whiteboard</span><span class="tag">Animation</span><span class="tag">Explainer</span></div><a class="link" href="https://drive.google.com/file/d/1E7B75ojFlZf3vnUvWlTfSR3PK9f4bVvf/view?usp=sharing" target="_blank">Open Full Project ↗</a></div>
+    </article>
+    <article class="sample-card reveal delay3">
+      <div class="frame youtube-frame"><iframe src="https://www.youtube.com/embed/vwNXLuGretQ?rel=0" title="YouTube portfolio sample" allowfullscreen></iframe></div>
+      <div class="sample-body"><div class="sample-label">04 · YT AI History Type</div><h3>YT AI History Type</h3><p>A further video example added to the portfolio collection so prospective clients can review more of the production range.</p><div class="tags"><span class="tag">YouTube</span><span class="tag">Video Production</span><span class="tag">Portfolio</span></div><a class="link" href="https://youtu.be/vwNXLuGretQ?si=ncrJynoY3BUR6Ct-" target="_blank">Watch on YouTube ↗</a></div>
+    </article>
+    <article class="sample-card reveal delay3">
+      <div class="frame"><iframe src="https://drive.google.com/file/d/16sPC6MOi-UE-wjz6lxBBusYvPIBkkRO1/preview" allow="autoplay"></iframe></div>
+      <div class="sample-body"><div class="sample-label">05 · AI Generated Short</div><h3>AI Generated Short</h3><p>Another real project added to the collection. The project details are available directly through the linked file.</p><div class="tags"><span class="tag">Video</span><span class="tag">Production</span><span class="tag">Portfolio</span></div><a class="link" href="https://drive.google.com/file/d/16sPC6MOi-UE-wjz6lxBBusYvPIBkkRO1/view?usp=sharing" target="_blank">Open Full Project ↗</a></div>
+    </article>
+  </div>
+
+  <div class="proof-strip reveal">
+    <div><strong>5+</strong><span>Portfolio samples</span></div>
+    <div><strong>End-to-End</strong><span>Production workflow</span></div>
+    <div><strong>Long-form</strong><span>Primary format preference</span></div>
+    <div><strong>Multi-format</strong><span>AI · Documentary · Animation</span></div>
+  </div>
+</div>
+</section>
+
+<section class="about" id="about"><div class="container">
+<div class="split">
+<div class="reveal"><div class="eyebrow">WHO I AM</div><h2>I’m Jawad.</h2><div class="mini-role">YouTube Content Production Partner</div></div>
+<div class="reveal">
+<p class="lead punch">You invest in the channel. I handle the content — end to end.</p>
+<p class="copy">From research and scripting to AI production, editing, SEO and publishing, I build the videos your channel needs so we can focus on consistent output and long-term growth.</p>
+<p class="copy longform-note"><strong>Why long-form?</strong> I prefer long-form because it gives more room for deeper storytelling, stronger viewer value and more opportunities to build a sustainable YouTube business than relying only on Shorts. Results still depend on the topic, audience, packaging and execution.</p>
+<div class="checks"><div class="check">Research & topic development</div><div class="check">Scriptwriting</div><div class="check">AI video production</div><div class="check">Video editing</div><div class="check">Color correction & grading</div><div class="check">YouTube SEO</div><div class="check">Uploading & publishing</div><div class="check">Channel optimization</div></div>
+<div class="pipeline"><span>Research <i>→</i></span><span>Script <i>→</i></span><span>AI Production <i>→</i></span><span>Editing <i>→</i></span><span>Color <i>→</i></span><span>SEO <i>→</i></span><span>Upload <i>→</i></span><span>Optimize</span></div>
+</div>
 </div>
 </div></section>
 
 <section id="services"><div class="container">
-<div class="sectionhead"><h2>What I can handle.</h2><p>You can bring the channel idea. I can help turn it into a repeatable content-production workflow.</p></div>
+<div class="section-head reveal"><h2>What I can do for your channel.</h2><p>Choose the complete workflow or outsource one specific service. Everything is structured around the actual production requirement.</p></div>
 <div class="services">
-<div class="service"><span class="num">01</span><h3>Research & Topics</h3><p>Topic discovery, competitor research, audience angles and content ideas.</p></div>
-<div class="service"><span class="num">02</span><h3>Scriptwriting</h3><p>Research-driven scripts built around hooks, storytelling, pacing and retention.</p></div>
-<div class="service"><span class="num">03</span><h3>Video Editing</h3><p>Faceless documentary editing with B-roll, pacing, captions, transitions and sound design.</p></div>
-<div class="service"><span class="num">04</span><h3>Thumbnail Design</h3><p>Clear, attention-focused thumbnails designed around the video's core idea.</p></div>
-<div class="service"><span class="num">05</span><h3>YouTube SEO</h3><p>Titles, descriptions, keywords and packaging support for publishing.</p></div>
-<div class="service"><span class="num">06</span><h3>Publishing Support</h3><p>Upload preparation, metadata, organization and practical channel support.</p></div>
+<article class="service reveal"><div class="no">01 · RESEARCH & STRATEGY</div><h3>Find the right story.</h3><p>Build the content direction before production starts.</p><ul><li>Topic research</li><li>Competitor research</li><li>Audience-focused ideas</li><li>Video concepts</li></ul></article>
+<article class="service reveal"><div class="no">02 · SCRIPTWRITING</div><h3>Turn research into narrative.</h3><p>Clear, research-based scripts for storytelling and documentary content.</p><ul><li>Documentary</li><li>Storytelling</li><li>Educational</li><li>Retention-focused</li></ul></article>
+<article class="service reveal"><div class="no">03 · AI PRODUCTION</div><h3>Build the visuals.</h3><p>AI-assisted production for cinematic and fictional content.</p><ul><li>AI B-roll</li><li>Cinematic sequences</li><li>Characters & environments</li><li>AI filmmaking</li></ul></article>
+<article class="service reveal"><div class="no">04 · VIDEO EDITING</div><h3>Make the story watchable.</h3><p>Editing focused on pacing, sound and visual storytelling.</p><ul><li>B-roll integration</li><li>Sound design & VFX</li><li>Transitions & motion</li><li>Color correction/grading</li></ul></article>
+<article class="service reveal"><div class="no">05 · YOUTUBE SEO</div><h3>Package for YouTube.</h3><p>Prepare publishing metadata and content positioning elements.</p><ul><li>Titles</li><li>Descriptions</li><li>Keywords</li><li>Metadata</li></ul></article>
+<article class="service reveal"><div class="no">06 · UPLOAD & OPTIMIZATION</div><h3>Finish the system.</h3><p>Practical support for publishing and channel presentation.</p><ul><li>Uploading</li><li>Thumbnail implementation</li><li>Channel structure</li><li>Basic channel SEO</li></ul></article>
 </div>
+<div class="custom reveal"><div><h3>Need only one service?</h3><p>Editing, scriptwriting, thumbnails, SEO, AI production, optimization or custom video production are all available separately.</p></div><a class="btn primary" href="https://wa.me/923174833265?text=Hi%20Muhammad%20Jawad%2C%20I%27d%20like%20a%20custom%20quote." target="_blank">Get a Custom Quote →</a></div>
 </div></section>
 
-<section id="process"><div class="container">
-<div class="sectionhead"><h2>One workflow. One point of contact.</h2><p>Instead of coordinating several freelancers for every stage, you can work with one production partner across the content pipeline.</p></div>
-<div class="process">
-<div class="step"><b>01 — RESEARCH</b><h3>Find the angle</h3><p>Topic, audience and competitor research.</p></div>
-<div class="step"><b>02 — SCRIPT</b><h3>Build the story</h3><p>Hook, structure, narration and retention.</p></div>
-<div class="step"><b>03 — PRODUCE</b><h3>Create the video</h3><p>Voiceover workflow, visuals, editing and thumbnail.</p></div>
-<div class="step"><b>04 — PUBLISH</b><h3>Package & upload</h3><p>SEO, metadata and publishing support.</p></div>
-</div>
-</div></section>
-
-<section id="work"><div class="container">
-<div class="sectionhead"><h2>Selected work.</h2><p>These are real projects I have worked on. The channels are at different stages, so I do not present them as monetization or growth case studies.</p></div>
-<div class="projects">
-<div class="project"><div class="projecttop"><span>PROJECT 01</span></div><div class="projectbody"><h3>Project No. 2</h3><p>Client production work. Available for review through the project link.</p><div class="tags"><span class="tag">YouTube</span><span class="tag">Production</span><span class="tag">Faceless</span></div><a href="https://drive.google.com/file/d/1EnyKJJZH61L2klDMNDzgBHDbc75BBfP-/view?usp=sharing" target="_blank">View Project →</a></div></div>
-<div class="project"><div class="projecttop"><span>PROJECT 02</span></div><div class="projectbody"><h3>Escalator</h3><p>Client production work presented as a portfolio sample.</p><div class="tags"><span class="tag">Editing</span><span class="tag">Documentary</span><span class="tag">Video</span></div><a href="https://drive.google.com/file/d/1yk4hfPo2mnuf9K-RtPgvc7McP6vhXxF6/view?usp=sharing" target="_blank">View Project →</a></div></div>
-<div class="project"><div class="projecttop"><span>PROJECT 03</span></div><div class="projectbody"><h3>Life Graphy</h3><p>A YouTube channel project I have worked on in the documentary space.</p><div class="tags"><span class="tag">Documentary</span><span class="tag">YouTube</span><span class="tag">Content</span></div><a href="https://www.youtube.com/@Life_graphy1/videos" target="_blank">View Channel →</a></div></div>
+<section><div class="container">
+<div class="section-head reveal"><h2>Experience you can actually verify.</h2><p>My portfolio is still growing, so I show real work and real project context instead of manufacturing large client counts or performance claims.</p></div>
+<div class="experience">
+<div class="experience-card reveal"><div class="metric">Multiple</div><h3>Client projects & production work</h3><p>The samples above represent different production styles and workflows from my client and channel work. More examples can be added as the portfolio grows.</p></div>
+<div class="experience-card reveal"><div class="metric">1.9K</div><h3>Subscribers on one monetized-channel project</h3><p>I produced an AI-generated fictional movie for a YouTube channel that was already monetized and had approximately 1.9K subscribers at the time of the project.</p></div>
 </div>
 </div></section>
 
 <section><div class="container">
-<div class="truth"><div><h3>Real work. Honest positioning.</h3><p>I’m currently building my client portfolio through hands-on projects. I have worked with 3 clients so far, and I prefer to show the work as it is rather than manufacture impressive-looking numbers.</p></div>
-<div><h3>No fake promises.</h3><p>I do not claim that a project is monetized, viral or generating revenue unless there is real evidence for it. The goal is simple: produce strong content and build long-term channel systems.</p></div></div>
+<div class="section-head reveal"><h2>A real channel-performance proof.</h2><p>This screenshot is included as evidence of hands-on YouTube experience from my own Think Physics channel.</p></div>
+<div class="proof reveal">
+<div class="proof-img"><img src="think-physics-375k-proof.png" alt="Think Physics channel achievement screenshot showing 375,000 views achieved April 4, 2026"></div>
+<div class="proof-copy"><div class="eyebrow">Channel Performance</div><h3>375,000 views achieved</h3><p>The supplied achievement screenshot shows the Think Physics channel reaching 375,000 views, achieved April 4, 2026.</p><p class="proof-note">This is shown as a record of channel experience — not a promise that a client will receive the same result.</p></div>
+</div>
+</div></section>
+
+<section id="process"><div class="container">
+<div class="section-head reveal"><h2>How the production works.</h2><p>One connected workflow keeps the project organized from the first research step to the final upload.</p></div>
+<div class="steps">
+<div class="step reveal"><b>01</b><h3>Research</h3><p>Topic, audience, competitors and direction.</p></div>
+<div class="step reveal"><b>02</b><h3>Script</h3><p>Concept, structure, narration and retention.</p></div>
+<div class="step reveal"><b>03</b><h3>Visuals</h3><p>B-roll, AI visuals, graphics and assets.</p></div>
+<div class="step reveal"><b>04</b><h3>Edit</h3><p>Pacing, sound, VFX and color.</p></div>
+<div class="step reveal"><b>05</b><h3>SEO</h3><p>Titles, descriptions and metadata.</p></div>
+<div class="step reveal"><b>06</b><h3>Upload</h3><p>Publishing setup and implementation.</p></div>
+<div class="step reveal"><b>07</b><h3>Optimize</h3><p>Structure and content consistency.</p></div>
+</div>
+</div></section>
+
+<section id="pricing"><div class="container">
+<div class="section-head reveal"><h2>Simple monthly pricing.</h2><p>Packages are separated by production depth and price. The portfolio samples above are shown together as proof of capability, not locked to a specific package.</p></div>
+<div class="pricing">
+<article class="price reveal"><div class="plan">BASIC</div><div class="amount">$299</div><div class="per">per month · 8 videos</div><div class="videos">Streamlined end-to-end production</div><p>Best suited to simpler, consistent formats such as explainers/whiteboard-style production where appropriate.</p><ul><li>Topic & content research</li><li>Script research & scriptwriting</li><li>AI-assisted B-roll where required</li><li>Professional editing</li><li>YouTube SEO</li><li>Video uploading</li><li>Basic channel optimization</li></ul><div class="price-sample"><div><b>Basic Sample</b>Sample video link will be inserted here.</div></div><a class="btn primary" href="https://wa.me/923174833265?text=Hi%20Muhammad%20Jawad%2C%20I%27m%20interested%20in%20the%20Basic%20plan." target="_blank">Ask About Basic →</a></article>
+
+<article class="price featured reveal"><div class="plan">STANDARD</div><div class="amount">$399</div><div class="per">per month · 8 videos</div><div class="videos">Polished documentary production</div><p>For stronger visual storytelling, AI documentary workflows and more refined post-production.</p><ul><li>Everything in Basic</li><li>Advanced documentary-style production</li><li>Enhanced visual storytelling</li><li>Professional color correction</li><li>Color grading</li><li>Refined post-production</li><li>End-to-end workflow</li></ul><div class="price-sample"><div><b>Standard Sample</b>Sample video link will be inserted here.</div></div><a class="btn primary" href="https://wa.me/923174833265?text=Hi%20Muhammad%20Jawad%2C%20I%27m%20interested%20in%20the%20Standard%20plan." target="_blank">Ask About Standard →</a></article>
+
+<article class="price reveal"><div class="plan">PREMIUM</div><div class="amount">$699</div><div class="per">per month · 8 videos</div><div class="videos">High-effort AI filmmaking</div><p>For cinematic AI production, fictional movies and advanced AI visual workflows.</p><ul><li>AI-generated fictional movies</li><li>Advanced AI filmmaking workflows</li><li>Cinematic storytelling</li><li>AI characters & environments</li><li>Advanced AI video production</li><li>Professional editing & sound design</li><li>Color grading</li><li>YouTube SEO & uploading</li><li>Channel optimization</li></ul><div class="price-sample"><div><b>Premium Sample</b>Your AI fictional movie sample appears above in Selected Work.</div></div><a class="btn primary" href="https://wa.me/923174833265?text=Hi%20Muhammad%20Jawad%2C%20I%27m%20interested%20in%20the%20Premium%20plan." target="_blank">Ask About Premium →</a><small>Third-party AI generation credits and paid platform usage fees (such as Veo, Kling, Seedance or similar tools) are separate and paid directly by the client.</small></article>
+</div>
+<div class="price-note">Pricing is negotiable depending on the plan, scope, production volume, visual complexity and time required. For pricing details, contact me via WhatsApp or email and I’ll respond when I’m online.</div>
 </div></section>
 
 <section id="faq"><div class="container">
-<div class="sectionhead"><h2>Questions, answered.</h2><p>A few things a potential client may want to know before starting.</p></div>
-<div class="faq">
-<div class="faqitem"><h3>Do you only edit videos?</h3><p>No. I can support multiple stages of the YouTube production process, including research, scripting, editing, thumbnails, SEO and publishing support.</p></div>
-<div class="faqitem"><h3>Do you work with faceless channels?</h3><p>Yes. Faceless and documentary-style YouTube content is a primary focus of my production work.</p></div>
-<div class="faqitem"><h3>Can you guarantee monetization or views?</h3><p>No. YouTube performance depends on many factors. I focus on the parts of the production process I can actually control: research, storytelling, editing, packaging and consistency.</p></div>
-<div class="faqitem"><h3>How can we start?</h3><p>Send me your channel, niche or idea. We can discuss what needs to be produced and decide on the right workflow.</p></div>
+<div class="section-head reveal"><h2>Before we start.</h2><p>Common questions about scope, packages and the way production is handled.</p></div>
+<div class="faq reveal">
+<div class="faqitem"><div class="q">Can I hire you for only one service?<span>+</span></div><div class="a">Yes. Editing, scriptwriting, thumbnail design, SEO, AI production, uploading and channel optimization can be requested separately.</div></div>
+<div class="faqitem"><div class="q">What is included in the complete workflow?<span>+</span></div><div class="a">Depending on the package: research, scripting, AI production, editing, color, SEO, uploading and channel optimization.</div></div>
+<div class="faqitem"><div class="q">Can you produce AI documentaries and fictional films?<span>+</span></div><div class="a">Yes. The current portfolio includes both AI documentary-style work and an AI-generated fictional movie created with VEO 3.</div></div>
+<div class="faqitem"><div class="q">Can the documentary format be adapted to other languages?<span>+</span></div><div class="a">Yes. The same production format can be adapted for other language markets, subject to the project's scripting, translation and voiceover requirements.</div></div>
+<div class="faqitem"><div class="q">Are AI generation credits included in the monthly price?<span>+</span></div><div class="a">No. Third-party AI generation credits and platform usage fees are separate and are paid directly by the client.</div></div>
+<div class="faqitem"><div class="q">Do you guarantee views, subscribers or monetization?<span>+</span></div><div class="a">No. YouTube performance depends on many factors. The service focuses on the production work and deliverables that can actually be controlled.</div></div>
+<div class="faqitem"><div class="q">Are the prices fixed?<span>+</span></div><div class="a">The listed prices are standard package rates. They are negotiable depending on project scope, complexity, volume and requirements. Contact me for a custom quote.</div></div>
 </div></div></section>
 
-<section class="cta"><div class="container">
-<div class="eyebrow">Let's work together</div>
-<h2>Have a channel idea?<br>Let's build the content.</h2>
-<p>If you need someone who can work across the YouTube production pipeline, send me your project details.</p>
-<div class="buttons" style="justify-content:center"><a class="btn primary" href="mailto:muhammadjawad9000390@gmail.com">Email Me</a><a class="btn secondary" href="https://wa.me/923174833265">WhatsApp</a></div>
+<section class="contact"><div class="container reveal">
+<div class="eyebrow">Let’s talk</div>
+<h2>Tell me what you want to build.</h2>
+<p>For further details about pricing, scope or production requirements, contact me via WhatsApp or email. I’ll respond as soon as I’m online.</p>
+<p class="availability">For further details, contact me via <b>WhatsApp</b> or <b>Email</b>. I’ll get back to you when I’m online.</p><div class="actions"><a class="btn primary" href="https://wa.me/923174833265?text=Hi%20Muhammad%20Jawad%2C%20I%27d%20like%20to%20discuss%20a%20YouTube%20project." target="_blank">Discuss Your Project on WhatsApp ↗</a><a class="btn outline" href="mailto:muhammadjawad9000390@gmail.com">Email Me</a></div>
 </div></section>
+</main>
 
-<footer><div class="container foot"><span>© 2026 Muhammad Jawad. YouTube Content Production.</span><span>Islamabad, Pakistan · Working with clients remotely</span></div></footer>
-</body></html>
+<footer><div class="container foot"><span>© 2026 Muhammad Jawad — YouTube Content Production</span><span>Remote production · Islamabad, Pakistan · English Website</span></div></footer>
+
+<script>
+const nav=document.getElementById('nav');
+window.addEventListener('scroll',()=>nav.classList.toggle('scrolled',scrollY>24));
+const io=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('show');io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+document.querySelectorAll('.faqitem').forEach(item=>item.addEventListener('click',()=>item.classList.toggle('open')));
+document.querySelectorAll('.sample-card,.service,.price,.project,.bigcard,.custom,.experience-card,.proof').forEach(card=>{
+  card.addEventListener('pointermove',e=>{
+    const r=card.getBoundingClientRect();
+    card.style.setProperty('--mx',(e.clientX-r.left)+'px');
+    card.style.setProperty('--my',(e.clientY-r.top)+'px');
+  });
+});
+const m=document.getElementById('mobile'), links=document.getElementById('links');
+m.addEventListener('click',()=>{
+  const open=links.style.display==='flex'; links.style.display=open?'':'flex';
+  if(!open){links.style.position='absolute';links.style.left='0';links.style.right='0';links.style.top='74px';links.style.padding='17px 4%';links.style.flexDirection='column';links.style.background='rgba(7,18,13,.98)';links.style.borderBottom='1px solid rgba(133,224,171,.18)'}
+});
+
+// V5 interaction layer
+document.querySelectorAll('.sample-card,.service,.price,.project,.experience-card,.custom,.proof').forEach(card=>{
+  card.addEventListener('mousemove',e=>{
+    const r=card.getBoundingClientRect();
+    card.style.setProperty('--mx',`${e.clientX-r.left}px`);
+    card.style.setProperty('--my',`${e.clientY-r.top}px`);
+  });
+  card.addEventListener('click',e=>{
+    if(e.target.closest('a,button')) return;
+    const parent=card.parentElement;
+    if(parent) parent.querySelectorAll(':scope > .selected').forEach(x=>x.classList.remove('selected'));
+    card.classList.add('selected');
+  });
+  card.addEventListener('mouseleave',()=>card.classList.remove('selected'));
+});
+
+
+document.querySelectorAll('.proof-strip > div').forEach(item=>{
+  item.addEventListener('mouseenter',()=>{item.style.background='rgba(57,185,121,.055)'; item.style.boxShadow='inset 0 0 28px rgba(57,185,121,.08)'});
+  item.addEventListener('mouseleave',()=>{item.style.background=''; item.style.boxShadow=''});
+});
+
+</script>
+</body>
+</html>
